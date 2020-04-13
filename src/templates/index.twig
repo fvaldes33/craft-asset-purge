@@ -1,0 +1,23 @@
+{% extends "_layouts/elementindex" %}
+{% set title = "Asset Purge"|t('app') %}
+{% set elementType = 'fvaldes33\\assetpurge\\elements\\Purge' %}
+{% set elementInstance = craft.app.elements.createElement(elementType) %}
+{% set sources = [] %}
+{% set context = 'index' %}
+
+{% do view.registerAssetBundle("craft\\web\\assets\\fileupload\\FileUploadAsset") %}
+{% do view.registerAssetBundle("craft\\web\\assets\\prismjs\\PrismJsAsset") %}
+
+{% block initJs %}
+    Craft.defaultIndexCriteria.kind = 'purge';
+    Craft.elementIndex = Craft.createElementIndex('{{ elementType|e("js") }}', $('#page-container'), {
+        elementTypeName: '{{ elementInstance.displayName()|e("js") }}',
+        elementTypePluralName: '{{ elementInstance.pluralDisplayName()|e("js") }}',
+        context: '{{ context }}',
+        storageKey: 'elementindex.{{ elementType|e("js") }}',
+        criteria: Craft.defaultIndexCriteria,
+        toolbarSelector: '#toolbar'
+    });
+{% endblock %}
+
+{% js block('initJs') %}

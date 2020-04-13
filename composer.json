@@ -1,0 +1,37 @@
+{
+    "name": "fvaldes33/asset-purge",
+    "description": "Provides an interface to view unused assets.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "asset purge"
+    ],
+    "support": {
+        "docs": "https://github.com/fvaldes33/asset-purge/blob/master/README.md",
+        "issues": "https://github.com/fvaldes33/asset-purge/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fvaldes33",
+            "homepage": "https://github.com/fvaldes33"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "fvaldes33\\assetpurge\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Asset Purge",
+        "handle": "asset-purge",
+        "class": "fvaldes33\\assetpurge\\AssetPurge"
+    }
+}

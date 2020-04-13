@@ -1,0 +1,29 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Asset Purge plugin for Craft CMS 3.x
+ *
+ * Asset Purge Settings.twig
+ *
+ * @author    fvaldes33
+ * @copyright Copyright (c) 2020 fvaldes33
+ * @link      https://github.com/fvaldes33
+ * @package   AssetPurge
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("fvaldes33\\assetpurge\\assetbundles\\assetpurge\\AssetPurgeAsset") %}
+
+{{
+    forms.lightSwitchField({
+        label: 'Auto Purge',
+        instructions: 'Allow the plugin to automatically purge assets.',
+        id: 'autoPurge',
+        name: 'autoPurge',
+        on: settings.autoPurge,
+        first: true
+    })
+}}
