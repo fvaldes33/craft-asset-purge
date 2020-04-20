@@ -65,7 +65,7 @@ class AssetPurge extends Plugin
     /**
      * @var bool
      */
-    public $hasCpSection = false;
+    public $hasCpSection = true;
 
     /**
      * @var string|null The plugin developer’s name
@@ -85,12 +85,12 @@ class AssetPurge extends Plugin
     /**
      * @var string|null The plugin’s documentation URL
      */
-    public $documentationUrl = "https://github.com/fvaldes33/asset-purge/blob/master/README.md";
+    public $documentationUrl = "https://github.com/fvaldes33/craft-asset-purge/blob/master/README.md";
 
     /**
      * @var string|null The plugin’s changelog URL.
      */
-    public $changelogUrl = "https://raw.githubusercontent.com/fvaldes33/asset-purge/master/CHANGELOG.md";
+    public $changelogUrl = "https://raw.githubusercontent.com/fvaldes33/craft-asset-purge/master/CHANGELOG.md";
 
     // Public Methods
     // =========================================================================

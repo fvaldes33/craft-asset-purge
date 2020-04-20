@@ -11,8 +11,8 @@
         "asset purge"
     ],
     "support": {
-        "docs": "https://github.com/fvaldes33/asset-purge/blob/master/README.md",
-        "issues": "https://github.com/fvaldes33/asset-purge/issues"
+        "docs": "https://github.com/fvaldes33/craft-asset-purge/blob/master/README.md",
+        "issues": "https://github.com/fvaldes33/craft-asset-purge/issues"
     },
     "license": "MIT",
     "authors": [
