@@ -24,20 +24,39 @@ To install the plugin, follow these instructions.
 
 ## Asset Purge Overview
 
--Insert text here-
+This plugin extends the Asset element and provides an element index view to review all unused assets. From this view, you can safely delete assets and clean up your asset folders. One big hurdle was making sure that all assets inside Redactor field types were accounted for.
+
+#### Tested On:
+* Asset Field
+* Redactor Field
+* Matrix Field
+        - Including blocks with asset fields
+        - relationship fields
+        - redactor fields
+* Globals
+* Users
+
+#### Plugin Compatibility:
+| Plugin | Entries Field | Categories Field | Redactor Field |
+|---|---|---|---|
+| Supertable | ✅ | ✅ | ✅ |
+| Neo | ✅ | ✅ | ✅ |
+| Linkit (Roadmap) | ❌ | ❌ | ❌ |
+
 
 ## Configuring Asset Purge
 
--Insert text here-
+No configuration required
 
 ## Using Asset Purge
 
--Insert text here-
+* Navigate to the Asset Purge CP page
+* Review assets and select items to delete
+* Use native craft delete action to remove unused assets
 
 ## Asset Purge Roadmap
 
-Some things to do, and ideas for potential features:
-
 * Release it
+* Add LinkIt plugin support
 
 Brought to you by [fvaldes33](https://github.com/fvaldes33)

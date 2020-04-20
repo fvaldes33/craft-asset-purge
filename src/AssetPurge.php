@@ -60,7 +60,7 @@ class AssetPurge extends Plugin
     /**
      * @var bool
      */
-    public $hasCpSettings = true;
+    public $hasCpSettings = false;
 
     /**
      * @var bool
