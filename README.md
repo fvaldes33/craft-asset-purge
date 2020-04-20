@@ -1,8 +1,8 @@
-# Asset Purge plugin for Craft CMS 3.x
+# Asset Purge Plugin for Craft CMS
 
-Provides an interface to view unused assets.
+<img style="box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.15)" width="512" src="resources/img/asset-purge-banner.jpg" alt="Logo" />
 
-![Screenshot](resources/img/plugin-logo.png)
+Asset Purge Plugin provides an interface to view and delete unused assets.
 
 ## Requirements
 
