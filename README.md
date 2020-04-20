@@ -30,9 +30,9 @@ This plugin extends the Asset element and provides an element index view to revi
 * Asset Field
 * Redactor Field
 * Matrix Field
-        - Including blocks with asset fields
-        - relationship fields
-        - redactor fields
+- Including blocks with asset fields
+- relationship fields
+- redactor fields
 * Globals
 * Users
 
